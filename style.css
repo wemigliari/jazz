@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.video-background {
+position: fixed;
+right: 0; bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background: url("images/concert.jpg") no-repeat;
+background-size: cover;
+}
+
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+@media only screen and (min-width: 268px){
+  .video-backgroud, {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
+
+.image-about {
+   background: url("images/concert.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.image-concert {
+   background: url("images/front.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 250px;
+  border: 15px solid transparent;
+  box-sizing: border-box;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@media only screen and (min: 568px) {
+  .box {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max: 1366px) {
+  .box {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.av-info {
+  width: 100%;
+}
+
+.av-info h2 {
+  padding: 0 20px 10px 30px;
+  font-family: arial;
+  font-size: 100px;
+  color: #ebeb00;
+  line-height: 20px;
+}
+
+.av-info p {
+  padding: 20px 20px 20px 20px;
+  font-family: helvetica;
+  font-size: 15px;
+  color: #343400;
+  line-height: 20px;
+}
+
+
+
+nav {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 45px;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: arial;
+  color: #ebeb00;
+  padding: 0 25px;
+}
+
+ul li a:hover {
+  color: #ffffff;
+  background-color: #555;
+}
+
+.active {
+ background-color: transparent;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #ebeb00;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: arial;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebeb00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: arial;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.av-info h2 {
+  padding: 20px 50px 10px 60px;
+}
+
+.av-info p {
+  padding: 10px 50px 10px 60px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+#header {
+  height: 50px;
+}
+
+#col1 {
+  background-color: #2e6b23;
+    width: 20%;
+}
+
+#col2 {
+  background-color: #b3b300;
+  width: 60%;
+}
+
+#col3 {
+  background-color: #2e6b23;
+    width: 20%;
+}
+
+.column {
+  display: flex;
+  column-gap: 10px;
+  height: 840px;
+  float: left;
+  margin: 40px 0 40px 0;
+}
+
+@media only screen and (min: 568px) {
+  .column a {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#footer {
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:40px;
+  margin: 0;
+  padding: 5px;
+}
+#footer li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 5px;
+}
+
+#footer li a:hover {
+  color: #ffffff;
+}
+
+.footer_text {
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
+  align-items:center;
+  color: #ebeb00;
+  height:40px;
+  margin: 0;
+  padding: 5px;
+}
+
+.container {
+  padding: 0 10px;
+  text-align: center;
+  color: #ebeb00;
+}
+
+.container p {
+  max-width: 600px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.email {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.email i {
+background: grey;
+width: 55px;
+line-height: 40px;
+}
+
+.email:hover > .tbox, btn:focus {
+  width: 260px;
+  transition: 0.6s;
+}
+
+.tbox, btn {
+  border: none;
+  outline: none;
+}
+
+.tbox {
+  width: 0;
+}
+
+.btn {
+  width: 200px;
+  background: grey;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: yellow;
+  border: none;
+}

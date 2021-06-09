@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>W. Migliari (2021)</title>
+        <meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 0.5">
+    </head>
+    <body background = "images/concert.jpg">
+        <nav>
+          <div class="nav">
+            <ul>
+              <li> <a href = "index.html">HOME</a></li>
+                    <div class="dropdown">
+                    <button class="dropbtn">JAZZ <em>pal</em>
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="about.html">ABOUT</a>
+                      <a href="concerts.html">CONCERTS</a>
+                      <a href="contacts.html">NEWSLETTER</a>
+                    </div>
+                    </div>
+            </ul>
+         </div>
+        </nav>
+
+        <form action = "connect.php" method = "POST">
+          <div class = "box">
+            <div class="container">
+                  <div class="email">
+                    <i class="fa fa-2x fas fa-envelope"></i>
+                    <input class = "tbox" type="email" name = "mail" id = "mail" placeholder="Enter your e-mail" required>
+                    <input class = "btn" type="submit" name = "Submit" id = "Submit" value="Subscribe | Newsletter"></input>
+                  </div>
+            </div>
+          </div>
+        </form>
+
+     <footer id="footer" class="color color-secondary short">
+        <div class="row">
+          <div class="col-md-12 center">
+            <ul class="social-icons mb-md">
+              <li> <a class = "active" href="https://theculturetrip.com/europe/spain/articles/the-best-jazz-clubs-in-vila-de-gracia-barcelona/"><i class="fa fa-2x fab fa-instagram"></i></a></li>
+              <li> <a class = "active" href="https://www.facebook.com/Arthur.reinelli"><i class="fa fa-2x fab fa-facebook-square"></i></a></li>
+              <li> <a class="active" href="https://twitter.com/intent/tweet/?text=The%20Best%20Jazz%20Clubs%20in%20Vila%20de%20Gracia%2C%20Barcelona%20via%20@culturetrip%20https://bnc.lt/gtCg/359ZXPrt6cb?utm_source=twitter%26utm_medium=share"><i class="fa fa-2x fab fa-twitter"></i></a></li>
+            </ul>
+             <footer class = "footer_text"> <small>&copy; Copyright 2021, W. Migliari</small> </footer>
+          </div>
+        </div>
+    </footer>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+    </body>
+</html>
